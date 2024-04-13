@@ -1,10 +1,17 @@
 <script setup>
+    import {ref, onMounted} from 'vue';
+    import axios from 'axios';
+    import RecordList from '@/components/RecordList.vue';
 
+    
 </script>
 
 <template>
     <div class="Records-container">
-
+        <div class="search-container">
+            <input type="text">
+        </div>
+        <RecordList/>
     </div>
 </template>
 

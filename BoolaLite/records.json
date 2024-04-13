@@ -1,27 +1,113 @@
 {
-    "Categories":[
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+  "asd": {
+    "Categories": [
+      "asd",
+      "fdsfs",
+      "aqweqwsd",
+      "fgrer"
     ],
-
     "Currencies": [
-        "HUF",
-        "USD",
-        "EUR"
-    ],
-
-    "Records":[
-        {
-            "id": "",
-            "isExpense": null,
-            "payee": "",
-            "category": "",
-            "amount": null,
-            "currency": ""
-        }
-    ]    
+      "HUF",
+      "USD",
+      "EUR"
+    ]
+  },
+  "Records": [
+    {
+      "id": null,
+      "isExpense": null,
+      "payee": "",
+      "category": "",
+      "amount": null,
+      "currency": ""
+    },
+    {
+      "id": "5eed",
+      "type": "Bevétel",
+      "payee": "fsdfsdf",
+      "category": "fdsfs",
+      "amount": 2342,
+      "currency": "EUR"
+    },
+    {
+      "id": "439e",
+      "type": "Bevétel",
+      "payee": "dfgdfg",
+      "category": "aqweqwsd",
+      "amount": 234234,
+      "currency": "HUF"
+    },
+    {
+      "id": "240a",
+      "type": "Bevétel",
+      "payee": "sdfsdfs",
+      "category": "fgrer",
+      "amount": 123,
+      "currency": "HUF"
+    },
+    {
+      "id": "f459",
+      "type": "Bevétel",
+      "payee": "sdfsdfs",
+      "category": "fgrer",
+      "amount": 123,
+      "currency": "HUF"
+    },
+    {
+      "id": "7499",
+      "type": "Bevétel",
+      "payee": "sdfsdfs",
+      "category": "fgrer",
+      "amount": 123,
+      "currency": "HUF"
+    },
+    {
+      "id": "3b9f",
+      "type": "Bevétel",
+      "payee": "sdfsdfs",
+      "category": "fgrer",
+      "amount": 123,
+      "currency": "HUF"
+    },
+    {
+      "id": "6dd2",
+      "type": "Bevétel",
+      "payee": "sdfsdfs",
+      "category": "fgrer",
+      "amount": 123,
+      "currency": "HUF"
+    },
+    {
+      "id": "b613",
+      "type": "Bevétel",
+      "payee": "sdfsdfs",
+      "category": "fgrer",
+      "amount": 123,
+      "currency": "HUF"
+    },
+    {
+      "id": "8ce3",
+      "type": "Bevétel",
+      "payee": "sdfsdfs",
+      "category": "fgrer",
+      "amount": 123,
+      "currency": "HUF"
+    },
+    {
+      "id": "2582",
+      "type": "Bevétel",
+      "payee": "sdfsdfs",
+      "category": "fgrer",
+      "amount": 123,
+      "currency": "HUF"
+    },
+    {
+      "id": "3976",
+      "type": null,
+      "payee": null,
+      "category": null,
+      "amount": null,
+      "currency": null
+    }
+  ]
 }

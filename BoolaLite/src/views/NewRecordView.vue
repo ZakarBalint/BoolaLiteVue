@@ -1,25 +1,46 @@
 <script setup>
     import {ref, onMounted} from 'vue';
+    import axios from 'axios';
+
+    const hostname = "http://localhost:3000"
+    const categories = ref([]);
+    const currencies = ref([]);
+
+    onMounted(() => {
+        axios.get(`${hostname}/asd`)
+            .then(r => categories.value = r.data.Categories)
+        axios.get(`${hostname}/asd`)
+            .then(r => currencies.value = r.data.Currencies)
+        
+    })
 
     const newRecord = ref({
         /*
-            "id": "",
-            "type": null,
-            "payee": "",
-            "category": "",
-            "amount": null,
-            "currency": ""
+            type: null,
+            payee: null,
+            category: null,
+            amount: null,
+            currency: null,
         */
-        id: "",
-        type: "",
-        payee: "",
-        category: "",
+        
+        type: null,
+        payee: null,
+        category: null,
         amount: null,
-        currency: "",
+        currency: null,
     })
+
+
 
     const add = () => {
         console.log(newRecord.value);
+
+        if(newRecord.value == null)
+        {
+            console.log("asd");
+        }
+
+        axios.post(`${hostname}/Records`, newRecord.value);
     }
 
 </script>
@@ -46,14 +67,14 @@
                 <input type="number" v-model="newRecord.amount">
                 <select v-model="newRecord.currency">
                     <option disabled value="">Kérem válasszon!</option>
-                    <option></option>
+                    <option v-for="currency in currencies" :value="currency">{{ currency }}</option>
                 </select>
             </div>
             <div class="form">
                 <h3>Kategória</h3>
                 <select v-model="newRecord.category">
                     <option disabled value="">Kérem válasszon!</option>
-                    <option></option>
+                    <option v-for="category in categories" :value="category">{{ category }}</option>
                 </select>
             </div>
             <div class="buttons-container">
