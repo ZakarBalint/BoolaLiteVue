@@ -1,0 +1,27 @@
+{
+    "Categories":[
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+
+    "Currencies": [
+        "HUF",
+        "USD",
+        "EUR"
+    ],
+
+    "Records":[
+        {
+            "id": "",
+            "isExpense": null,
+            "payee": "",
+            "category": "",
+            "amount": null,
+            "currency": ""
+        }
+    ]    
+}

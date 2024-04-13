@@ -1,0 +1,38 @@
+:root{
+  --text-color: #bce9ff;
+  --main-background: #001f2a;
+  --sec-background: #0080aa;
+}
+
+*{
+  color: var(--text-color);
+}
+
+input, select, button{
+  background-color: var(--main-background);
+  border: 2px solid var(--text-color);
+  border-radius: 5px;
+  height: 30px;
+  margin: 5px;
+  transition: all ease-out .1s;
+  box-sizing: border-box;
+}
+
+button:hover, select:hover{
+  cursor: pointer;
+}
+
+button:active, select:active, input:active{
+  border: 2px solid var(--main-background);
+  transition: all ease-out .1s;
+}
+
+#app{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
