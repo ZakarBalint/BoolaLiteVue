@@ -15,15 +15,30 @@
 </template>
 
 <style scoped>
-.outer-grid{
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  margin: 0;
-  height: 100lvh;
-  background-color: var(--main-background);
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+
+@media screen and (min-width: 1200px) {
+  .outer-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+    margin: 0;
+    height: 100lvh;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .outer-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+    margin: 0;
+    box-sizing: border-box;
+  }
 }
 
 .inner-asd{

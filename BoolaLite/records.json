@@ -1,10 +1,17 @@
 {
-  "asd": {
+  "Resources": {
     "Categories": [
-      "asd",
-      "fdsfs",
-      "aqweqwsd",
-      "fgrer"
+      "Készpénz felvétel",
+      "Otthon",
+      "Bevásárlás",
+      "Szórakozás",
+      "Vendéglátás",
+      "Közlekedés",
+      "Ruházat",
+      "Utazás",
+      "Számlák",
+      "Utalás",
+      "Egyéb"
     ],
     "Currencies": [
       "HUF",
@@ -14,100 +21,44 @@
   },
   "Records": [
     {
-      "id": null,
-      "isExpense": null,
-      "payee": "",
-      "category": "",
-      "amount": null,
-      "currency": ""
-    },
-    {
-      "id": "5eed",
-      "type": "Bevétel",
-      "payee": "fsdfsdf",
-      "category": "fdsfs",
-      "amount": 2342,
-      "currency": "EUR"
-    },
-    {
-      "id": "439e",
-      "type": "Bevétel",
-      "payee": "dfgdfg",
-      "category": "aqweqwsd",
-      "amount": 234234,
+      "id": "8323",
+      "type": "Kiadás",
+      "payee": "Bevásárlás",
+      "category": "Bevásárlás",
+      "amount": 8000,
       "currency": "HUF"
     },
     {
-      "id": "240a",
-      "type": "Bevétel",
-      "payee": "sdfsdfs",
-      "category": "fgrer",
-      "amount": 123,
+      "id": "a5fa",
+      "type": "Kiadás",
+      "payee": "Bérlet",
+      "category": "Közlekedés",
+      "amount": 5800,
       "currency": "HUF"
     },
     {
-      "id": "f459",
+      "id": "7bb0",
       "type": "Bevétel",
-      "payee": "sdfsdfs",
-      "category": "fgrer",
-      "amount": 123,
+      "payee": "Ösztöndíj",
+      "category": "Utalás",
+      "amount": 42000,
       "currency": "HUF"
     },
     {
-      "id": "7499",
-      "type": "Bevétel",
-      "payee": "sdfsdfs",
-      "category": "fgrer",
-      "amount": 123,
-      "currency": "HUF"
+      "id": "b7c5",
+      "type": "Kiadás",
+      "payee": "Előfizetés",
+      "category": "Szórakozás",
+      "amount": 7,
+      "currency": "USD"
     },
     {
-      "id": "3b9f",
+      "id": "836d",
       "type": "Bevétel",
-      "payee": "sdfsdfs",
-      "category": "fgrer",
-      "amount": 123,
+      "payee": "Zsebpénz",
+      "category": "Egyéb",
+      "amount": 4000,
       "currency": "HUF"
-    },
-    {
-      "id": "6dd2",
-      "type": "Bevétel",
-      "payee": "sdfsdfs",
-      "category": "fgrer",
-      "amount": 123,
-      "currency": "HUF"
-    },
-    {
-      "id": "b613",
-      "type": "Bevétel",
-      "payee": "sdfsdfs",
-      "category": "fgrer",
-      "amount": 123,
-      "currency": "HUF"
-    },
-    {
-      "id": "8ce3",
-      "type": "Bevétel",
-      "payee": "sdfsdfs",
-      "category": "fgrer",
-      "amount": 123,
-      "currency": "HUF"
-    },
-    {
-      "id": "2582",
-      "type": "Bevétel",
-      "payee": "sdfsdfs",
-      "category": "fgrer",
-      "amount": 123,
-      "currency": "HUF"
-    },
-    {
-      "id": "3976",
-      "type": null,
-      "payee": null,
-      "category": null,
-      "amount": null,
-      "currency": null
     }
   ]
 }

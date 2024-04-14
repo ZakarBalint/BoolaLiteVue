@@ -6,6 +6,7 @@
 
 *{
   color: var(--text-color);
+  font-family: sans-serif;
 }
 
 input, select, button{
@@ -30,6 +31,7 @@ button:active, select:active, input:active{
 #app{
   margin: 0;
   padding: 0;
+  background-color: var(--main-background);
 }
 
 body{
