@@ -26,6 +26,8 @@ export const useRecordsStore = defineStore('records', () => {
     function deleteRecord(id) {
         axios.delete(`${hostname}/Records/${id}`)
             .then(r => {getRecords()});
+            
+        alert("Sikeres törlés!");
     }
 
     function addRecord() {
@@ -35,6 +37,7 @@ export const useRecordsStore = defineStore('records', () => {
                 .then(r => {getRecords()});
 
             deleteFormContent();
+            alert("Sikeres hozzáadás!");
         }
         else{
             alert("Minden mezőt ki kell tölteni!");
@@ -50,6 +53,7 @@ export const useRecordsStore = defineStore('records', () => {
             
             deleteFormContent();
             turnOffUpdateMode();
+            alert("Sikeres módosítás!");
         }
         else{
             alert("Minden mezőt ki kell tölteni!");
