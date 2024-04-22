@@ -1,7 +1,7 @@
 <script setup>
     import {ref, onMounted} from 'vue';
     import axios from 'axios';
-    import { useRecordsStore } from '@/stores/records';
+    import { useRecordsStore } from '@/stores/records';    
     const RecordsStore = useRecordsStore();
 
     const hostname = "http://localhost:3000"

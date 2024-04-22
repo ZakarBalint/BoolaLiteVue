@@ -21,12 +21,12 @@
   },
   "Records": [
     {
-      "id": "8323",
       "type": "Kiadás",
       "payee": "Bevásárlás",
       "category": "Bevásárlás",
-      "amount": 8000,
-      "currency": "HUF"
+      "amount": 8500,
+      "currency": "HUF",
+      "id": "8323"
     },
     {
       "id": "a5fa",
@@ -58,6 +58,14 @@
       "payee": "Zsebpénz",
       "category": "Egyéb",
       "amount": 4000,
+      "currency": "HUF"
+    },
+    {
+      "id": "2dca",
+      "type": "Kiadás",
+      "payee": "asdasd",
+      "category": "Utalás",
+      "amount": 21343124,
       "currency": "HUF"
     }
   ]

@@ -1,8 +1,10 @@
 import { ref, computed, onMounted } from 'vue'
 import { defineStore } from 'pinia'
 import axios from 'axios'
+import { useToast } from "vue-toastification";
 
 const hostname = "http://localhost:3000";
+const toast = useToast();
 
 export const useRecordsStore = defineStore('records', () => {
     const records = ref([]);
@@ -26,8 +28,7 @@ export const useRecordsStore = defineStore('records', () => {
     function deleteRecord(id) {
         axios.delete(`${hostname}/Records/${id}`)
             .then(r => {getRecords()});
-            
-        alert("Sikeres törlés!");
+        toast.success("Sikeres törlés!")        
     }
 
     function addRecord() {
@@ -36,11 +37,11 @@ export const useRecordsStore = defineStore('records', () => {
             axios.post(`${hostname}/Records`, newRecord.value)
                 .then(r => {getRecords()});
 
-            deleteFormContent();
-            alert("Sikeres hozzáadás!");
+            deleteFormContent();            
+            toast.success("Sikeres hozzáadás!");
         }
-        else{
-            alert("Minden mezőt ki kell tölteni!");
+        else{            
+            toast.error("Minden mezőt ki kell tölteni!");
         }
         
     }
@@ -52,11 +53,11 @@ export const useRecordsStore = defineStore('records', () => {
                 .then(r => {getRecords()});
             
             deleteFormContent();
-            turnOffUpdateMode();
-            alert("Sikeres módosítás!");
+            turnOffUpdateMode();                
+            toast.success("Sikeres módosítás!");
         }
-        else{
-            alert("Minden mezőt ki kell tölteni!");
+        else{            
+            toast.error("Minden mezőt ki kell tölteni!");
         }
     }
 
